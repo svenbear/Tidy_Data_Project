@@ -7,7 +7,7 @@ Getting &amp; Cleaning Data Course Project
   3 run_analysis.R - The R code that acquires, cleans and outputs the tidy data set.  All R code is
  contained in this file  
  
-#2) Project resources, requirements and background
+#2) Project description and Data sources
  This data set holds data on motion experiments done on 30 subject users.  Each user performed 6 distinct
  actions WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
  wearing a smartphone (Samsung Galaxy S II) on the waist that recorded 3 dimensional (X,Y,Z)
