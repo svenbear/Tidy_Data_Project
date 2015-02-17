@@ -2,9 +2,9 @@
 Getting &amp; Cleaning Data Course Project
 #1) List of Files
  This repository contains 3 files:  
-  1 README.md      - This file, it explains how the R-Code works per the project requirements  
-  2 Codebook.md    - Documents the variables in the Final tidy data set  
-  3 run_analysis.R - The R code that acquires, cleans and outputs the tidy data set.  All R code is
+  1) README.md      - This file, it explains how the R-Code works per the project requirements  
+  2) Codebook.md    - Documents the variables in the Final tidy data set  
+  3) run_analysis.R - The R code that acquires, cleans and outputs the tidy data set.  All R code is
  contained in this file  
  
 #2) Project description and Data sources
@@ -23,11 +23,8 @@ Getting &amp; Cleaning Data Course Project
  tidy data set.  Among the important ones are:  
  
  - activity_labels - Lists the 6 activities  
- 
  - features: List the 561 measured motion variables for the two data sets (train and test)  
- 
  - train/subject_train: Lists the subject number (in order) for each of the training data set tests  
- 
  - train/y_train: Lists the activity number (in order) for each of the training data set tests  
  - train/X_train - Lists the motion data (in order) for each of the training data set tests.  There are 561
  motion parameters.  
