@@ -1,8 +1,7 @@
 # Tidy Data Project
-===================
 Getting &amp; Cleaning Data Course Project
 #1) List of Files
-
+===================
  This repository contains 3 files:  
   1 README.md      - This file, it explains how the R-Code works per the project requirements  
   2 Codebook.md    - Documents the variables in the Final tidy data set  
@@ -10,7 +9,7 @@ Getting &amp; Cleaning Data Course Project
  contained in this file  
  
  #2) Some Background
- 
+ ===================
  This data set holds data on motion experiments done on 30 subject users.  Each user performed 6 distinct
  actions WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
  wearing a smartphone (Samsung Galaxy S II) on the waist that recorded 3 dimensional (X,Y,Z)
@@ -48,7 +47,7 @@ Getting &amp; Cleaning Data Course Project
 
 
  #3) run_analysis.R script
-
+===================
   Download  gzip file and gunzip it.  The data file is located 
   at URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
  
@@ -85,7 +84,7 @@ Getting &amp; Cleaning Data Course Project
  Write the final tidy table "mean_data.txt" to a file
  
  #4) Displaying output
- 
+===================
   To display the output in a readable format
  - run the following R command on the mean_data.txt file created by the R script  
 
