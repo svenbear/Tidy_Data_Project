@@ -23,22 +23,21 @@ on the sampling protocols, filetring, etc. done to the data captured from the An
     https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
     
  The zipfile contains several files that need to be processed in order to create the final
- tidy data set.  Among the important ones are:  
+ tidy data set.  Among the important ones are:
  
- - activity_labels - Lists the 6 activities  
- - features: List the 561 measured motion variables for the two data sets (train and test)  
- - train/subject_train: Lists the subject number (in order) for each of the training data set tests  
- - train/y_train: Lists the activity number (in order) for each of the training data set tests  
- - train/X_train - Lists the motion data (in order) for each of the training data set tests, 561 motion parameters.  
+ - activity_labels - Lists the 6 activities
+ - features: List the 561 measured motion variables for the two data sets (train and test)
+ - train/subject_train: Lists the subject number (in order) for each of the training data set tests
+ - train/y_train: Lists the activity number (in order) for each of the training data set tests
+ - train/X_train - Lists the motion data (in order) for each of the training data set tests, 561 motion parameters.
  
 The previous 3 files can be combined to get a data frame with subject,activity,and measurements for each test in the training data set
 
- - test/subject_test: Lists the subject number (in order) for each of the test data set tests  
- - test/y_test: Lists the activity number (in order) for each of the test data set tests  
- - test/X_test: Lists the motion data (in order) for each of the test data set tests, 561 motion parameters.  
-  
- The previous 3 files can be combined to get a data frame with subject,activity,measurements for each test in the test data set
+ - test/subject_test: Lists the subject number (in order) for each of the test data set tests
+ - test/y_test: Lists the activity number (in order) for each of the test data set tests
+ - test/X_test: Lists the motion data (in order) for each of the test data set tests, 561 motion parameters.
 
+The previous 3 files can be combined to get a data frame with subject,activity,measurements for each test in the test data set
 
 #3) run_analysis.R script
 Download the zip file and unzip it.  The data file is located at:
@@ -57,11 +56,11 @@ Create Test DF:
  - Set col 2 of the test DF to the data from the file y_test.txt
  
 Combine (by rows) the Train and Test DFs into one DF  (RBIND)
-  
+ 
 Reduce this combined DF, keeping only columns with "mean" or "std" in the motion variable names
-  
+ 
 Strip "."s out of the motion variable names
-  
+ 
 Change activity numbers in col 2 of the DF to the proper enum values eg 1 should be changed to "WALKING"
  
  
