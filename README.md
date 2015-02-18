@@ -80,6 +80,6 @@ To display the output in a readable format
  - run the following R command on the mean_data.txt file created by the R script  
       data<-read.table("./mean_data.txt",header=TRUE)
 
- #5) Footnotes and References
+#5) Footnotes and References
 
 1.) Codebook suggestions and a good source for varible units provided by Jesus Castagnetto (Community TA) at the following discussion thread https://class.coursera.org/getdata-011/forum/thread?thread_id=249
