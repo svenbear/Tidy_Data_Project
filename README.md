@@ -21,7 +21,9 @@ on the sampling protocols, filetring, etc. done to the data captured from the An
 
   Here is the link to the data used for this project: 
     https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-    
+  The R script run_analysis.R will download and unzip the data, if the script is to be run multiple times,
+  the first 10 lines of code should be commented out to reduce processing time.
+  
  The zipfile contains several files that need to be processed in order to create the final
  tidy data set.  Among the important ones are:
  
