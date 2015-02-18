@@ -72,14 +72,15 @@ Create the mean_data DF with 180 rows and 88 cols to hold the final tidy data se
 Write the final tidy table "mean_data.txt" to a file
  
 #4) Displaying output
- 
-Code for this command to read the output file was taken from a Discussion Forum post by David Hood
- https://class.coursera.org/getdata-008/forum/thread?thread_id=24
- 
-To display the output in a readable format
- - run the following R command on the mean_data.txt file created by the R script  
+
+To display the output in a readable format [#2]
+ - run the following R command on the mean_data.txt file created by the R script
+
       data<-read.table("./mean_data.txt",header=TRUE)
 
 #5) Footnotes and References
 
 1.) Codebook suggestions and a good source for varible units provided by Jesus Castagnetto (Community TA) at the following discussion thread https://class.coursera.org/getdata-011/forum/thread?thread_id=249
+
+2.) Code for this command to read the output file was taken from a Discussion Forum post by David Hood
+ https://class.coursera.org/getdata-008/forum/thread?thread_id=24
