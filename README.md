@@ -29,63 +29,57 @@ on the sampling protocols, filetring, etc. done to the data captured from the An
  - features: List the 561 measured motion variables for the two data sets (train and test)  
  - train/subject_train: Lists the subject number (in order) for each of the training data set tests  
  - train/y_train: Lists the activity number (in order) for each of the training data set tests  
- - train/X_train - Lists the motion data (in order) for each of the training data set tests.  There are 561
- motion parameters.  
+ - train/X_train - Lists the motion data (in order) for each of the training data set tests, 561 motion parameters.  
  
- The previous 3 files can be combined to get a data frame with 
-  subject,activity,measurements for each test in the training data set
+The previous 3 files can be combined to get a data frame with subject,activity,and measurements for each test in the training data set
 
  - test/subject_test: Lists the subject number (in order) for each of the test data set tests  
  - test/y_test: Lists the activity number (in order) for each of the test data set tests  
- - test/X_test: Lists the motion data (in order) for each of the test data set tests.  There are 561
- motion parameters.  
+ - test/X_test: Lists the motion data (in order) for each of the test data set tests, 561 motion parameters.  
   
- The previous 3 files can be combined to get a data frame with 
-  subject,activity,measurements for each test in the test data set
+ The previous 3 files can be combined to get a data frame with subject,activity,measurements for each test in the test data set
 
 
- #3) run_analysis.R script
-  Download the zip file and unzip it.  The data file is located at:
+#3) run_analysis.R script
+Download the zip file and unzip it.  The data file is located at:
     URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
  
-  Create Training Data Frame (DF):
+Create Training Data Frame (DF):
  - Set col names for the train DF to the data from the file features.txt
  - read train/X_train.txt into train DF
  - Set col 1 of the train DF to the data from the file train_subject.txt
  - Set col 2 of the train DF to the data from the file y_train.txt
  	     
-  Create Test DF:
+Create Test DF:
  - Set col names for the test DF to the data from the file features.txt
  - read train/X_test.txt into test DF
  - Set col 1 of the test DF to the data from the file test_subject.txt
  - Set col 2 of the test DF to the data from the file y_test.txt
  
-  Combine (by rows) the Train and Test DFs into one DF  (RBIND)
+Combine (by rows) the Train and Test DFs into one DF  (RBIND)
   
-  Reduce this combined DF, keeping only columns with "mean" or "std" in the motion variable names
+Reduce this combined DF, keeping only columns with "mean" or "std" in the motion variable names
   
-  Strip "."s out of the motion variable names
+Strip "."s out of the motion variable names
   
-  Change activity numbers in col 2 of the DF to the proper enum values eg 1 should be changed to "WALKING"
+Change activity numbers in col 2 of the DF to the proper enum values eg 1 should be changed to "WALKING"
  
  
- Create the mean_data DF with 180 rows and 88 cols to hold the final tidy data set.
+Create the mean_data DF with 180 rows and 88 cols to hold the final tidy data set.
  				 (30 subjects X 6 activities = 180 rows)
  				 (a subject + an activity + 86 motion variables = 88 cols).  
  - Group by subject and by activity with the mean for each motion data element
 
- Write the final tidy table "mean_data.txt" to a file
+Write the final tidy table "mean_data.txt" to a file
  
- #4) Displaying output
+#4) Displaying output
  
 Code for this command to read the output file was taken from a Discussion Forum post by David Hood
  https://class.coursera.org/getdata-008/forum/thread?thread_id=24
  
-  To display the output in a readable format
+To display the output in a readable format
  - run the following R command on the mean_data.txt file created by the R script  
-
- data<-read.table("./mean_data.txt",header=TRUE)
-
+      data<-read.table("./mean_data.txt",header=TRUE)
 
  #5) Footnotes and References
 
