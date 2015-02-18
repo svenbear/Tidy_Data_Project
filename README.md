@@ -42,7 +42,7 @@ Getting &amp; Cleaning Data Course Project
 
 
  #3) run_analysis.R script
-  Download  gzip file and gunzip it.  The data file is located 
+  Download the zip file and gunzip it.  The data file is located 
   at URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
  
   Create Training DF:
