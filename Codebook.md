@@ -1,6 +1,8 @@
 #Codebook 
+The script, run_analysis.R has lines of code that will download the ZIP file that contains the data needed for this
+project.  After running the script for the first time, comment out STEP A to reduce run time of re-loading the data.
 
-The tidy data set is contained in a file called mean_data.txt.  This file has 88 columns of data.  
+The final tidy data set is contained in a file called mean_data.txt.  This file has 88 columns of data.  
 
 Column 1 is called "subject".  It contains values from 1 - 30 that correspond to the person (subject) being tested  
 
