@@ -12,11 +12,14 @@ Getting &amp; Cleaning Data Course Project
  actions WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
  wearing a smartphone (Samsung Galaxy S II) on the waist that recorded 3 dimensional (X,Y,Z)
   motion data.  The data was randomly partitioned into a test data set and a train data set.
+ 
+The original paper: https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2013-84.pdf, which goes into more detail  
+on the sampling protocols, filetring, etc. done to the data captured from the Android phone sensors. [#1]
   
-  A full description is available at the site where the data was obtained: 
+  A full description of the data set is available at the site where the data was obtained: 
     http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-  Here are the data for the project: 
+  Here is the link to the data used for this project: 
     https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
     
  The zipfile contains several files that need to be processed in order to create the final
@@ -83,4 +86,4 @@ Code for this command to read the output file was taken from a Discussion Forum 
 
  data<-read.table("./mean_data.txt",header=TRUE)
 
-
+1.) Codebook suggestions and a good source for varible units provided by Jesus Castagnetto (Community TA) at the following discussion thread https://class.coursera.org/getdata-011/forum/thread?thread_id=249
