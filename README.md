@@ -19,13 +19,14 @@ on the sampling protocols, filetring, etc. done to the data captured from the An
   A full description of the data set is available at the site where the data was obtained: 
     http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-  Here is the link to the data used for this project: 
-    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-  The R script run_analysis.R will download and unzip the data, if the script is to be run multiple times,
-  the first 10 lines of code should be commented out to reduce processing time.
+Here is the link to the data used for this project: 
+    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+The R script run_analysis.R will download and unzip the data, if the script is to be run multiple times,
+the first 10 lines of code should be commented out to reduce processing time.
   
- The zipfile contains several files that need to be processed in order to create the final
- tidy data set.  Among the important ones are:
+The zipfile contains several files that need to be processed in order to create the final
+tidy data set.  Among the important ones are:
  
  - activity_labels - Lists the 6 activities
  - features: List the 561 measured motion variables for the two data sets (train and test)
