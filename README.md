@@ -86,4 +86,7 @@ Code for this command to read the output file was taken from a Discussion Forum 
 
  data<-read.table("./mean_data.txt",header=TRUE)
 
+
+ #5) Footnotes and References
+
 1.) Codebook suggestions and a good source for varible units provided by Jesus Castagnetto (Community TA) at the following discussion thread https://class.coursera.org/getdata-011/forum/thread?thread_id=249
