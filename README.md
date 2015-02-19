@@ -42,36 +42,36 @@ The previous 3 files can be combined to get a data frame with subject,activity,a
 
 The previous 3 files can be combined to get a data frame with subject,activity,measurements for each test in the test data set
 
-#3) run_analysis.R script
+#3) R Code --  run_analysis.R
+STEP A - load the data from the web, run one time
 Download the zip file and unzip it.  The data file is located at:
     URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
  
-Create Training Data Frame (DF):
+STEP 1 - load the TRAIN data from local files
+Create the Training Data Frame (DF):
  - Set col names for the train DF to the data from the file features.txt
  - read train/X_train.txt into train DF
  - Set col 1 of the train DF to the data from the file train_subject.txt
  - Set col 2 of the train DF to the data from the file y_train.txt
  	     
-Create Test DF:
+STEP 2 - load the TEST data from the local files
+Create the Test DF:
  - Set col names for the test DF to the data from the file features.txt
  - read train/X_test.txt into test DF
  - Set col 1 of the test DF to the data from the file test_subject.txt
  - Set col 2 of the test DF to the data from the file y_test.txt
- 
+
+STEP 3 - clean the data and merge TRAIN with TEST to create one data set
 Combine (by rows) the Train and Test DFs into one DF  (RBIND)
- 
 Reduce this combined DF, keeping only columns with "mean" or "std" in the motion variable names
- 
 Strip "."s out of the motion variable names
- 
 Change activity numbers in col 2 of the DF to the proper enum values eg 1 should be changed to "WALKING"
  
- 
+STEP 4 - create final tidy data set
 Create the mean_data DF with 180 rows and 88 cols to hold the final tidy data set.
  				 (30 subjects X 6 activities = 180 rows)
  				 (a subject + an activity + 86 motion variables = 88 cols).  
- - Group by subject and by activity with the mean for each motion data element
-
+Group by subject and by activity with the mean for each motion data element
 Write the final tidy table "mean_data.txt" to a file
  
 #4) Displaying output
