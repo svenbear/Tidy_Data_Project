@@ -79,6 +79,5 @@ train_test$activity <- factor(train_test$activity,level=1:6,labels=c('WALKING','
 #STEP 5a - create the aggregate DF for final data:  30 subs X 6 Activities = 180 rows   86 features + sub + act = 88 cols
 mean_data <- aggregate(train_test[,3:88], by=list(train_test$subject, train_test$activity), FUN="mean")
 
-
 # STEP 6 write the final data set, mean_data to a text file in the working directory
 write.table(mean_data,file="./mean_data.txt",row.name=FALSE)
